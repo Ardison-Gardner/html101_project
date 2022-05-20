@@ -7,9 +7,6 @@
         background-color: black;
         color: white;
       }
-      #links {
-        visibility: hidden;
-      }
     </style>
   </head>
   <body>
@@ -27,15 +24,26 @@
       Gregory looks forward to the day when he will be a professional coder developing web apps to fulfill peoples' needs!
     </p>
     <br>
-    <button onclick="getElementById('links')" type="button">
-      Show links
-    </button>
-    <div id="links">
+    <input onclick="showHide()" type="button" value="Show Links" id="showHideLinks"></input>
+    <div id="links" style="visibility:hidden">
       <ul>
         <li><a href="https://www.facebook.com/gregory.ardison.gardner">Facebook</a></li>
         <li><a href="https://twitter.com/Greg_AG">Twitter</a></li>
         <li><a href="https://www.instagram.com/ardisongardner/">Instagram</a></li>
       </ul>
     </div>
+    <script>
+      function showHide() {
+        let linkSection = document.getElementById('links')
+        let btn = document.getElementById('showHideLinks')
+        if (linkSection.style.visibility === 'hidden') {
+          linkSection.style.visibility = 'visible'
+          btn.value = 'Hide Links'
+        } else {
+          linkSection.style.visibility = 'hidden'
+          btn.value = 'Show Links'
+        }
+      }
+    </script>
   </body>
 </html>
