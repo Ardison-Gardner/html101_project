@@ -7,6 +7,9 @@
         background-color: black;
         color: white;
       }
+      #links {
+        visibility: hidden;
+      }
     </style>
   </head>
   <body>
@@ -19,10 +22,14 @@
     <p>
       Gregory Ardison-Gardner, taking advantage of the COVID-19 pandemic, decided he would pursue a career as a full stack developer. Following in the footsteps of his father, himself an accountant turned coder in the early days of the intrnet, bought himself a laptop and started learning through online resources.
     </p>
+    <hr>
     <p>
       Gregory looks forward to the day when he will be a professional coder developing web apps to fulfill peoples' needs!
     </p>
     <br>
-    <div></div>
+    <button onclick="getElementById('links')" type="button">
+      Show links
+    </button>
+    <div id="links"></div>
   </body>
 </html>
