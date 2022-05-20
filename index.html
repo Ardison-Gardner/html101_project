@@ -8,8 +8,22 @@
         color: white;
       }
     </style>
+    <script>
+      function showHide() {
+        let linkSection = document.getElementById('links')
+        let btn = document.getElementById('showHideLinks')
+        if (linkSection.style.visibility === 'hidden') {
+          linkSection.style.visibility = 'visible'
+          btn.value = 'Hide Links'
+        } else {
+          linkSection.style.visibility = 'hidden'
+          btn.value = 'Show Links'
+        }
+      }
+      </script>
   </head>
   <body>
+    <img src="img/banner.jpeg" alt="Horizontal Banner with Hands Typing on Laptop Keyboard, Various Electronic Devices and Symbols. Art by Ernest Akayeu | Dreamstime.com" width="800">
     <h1>
       <b>Gregory Ardison-Gardner</b>
     </h1>
@@ -32,18 +46,5 @@
         <li><a href="https://www.instagram.com/ardisongardner/">Instagram</a></li>
       </ul>
     </div>
-    <script>
-      function showHide() {
-        let linkSection = document.getElementById('links')
-        let btn = document.getElementById('showHideLinks')
-        if (linkSection.style.visibility === 'hidden') {
-          linkSection.style.visibility = 'visible'
-          btn.value = 'Hide Links'
-        } else {
-          linkSection.style.visibility = 'hidden'
-          btn.value = 'Show Links'
-        }
-      }
-    </script>
   </body>
 </html>
